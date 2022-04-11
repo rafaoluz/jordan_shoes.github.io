@@ -1,0 +1,210 @@
+/*Variáveis*/
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+
+    --title: #181818;
+    --text: #474747;
+}
+/*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Header */ 
+header{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+header p {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #181818;
+    color: var(--white);
+    padding: 11px;
+}
+header a{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Blockquote */ 
+.blockquote{
+    height:60vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(1,1,1, 0.325),rgba(0,0,0,0.564)),url(../img/wallpaper.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;    
+}
+.info_blockquote{
+    display: block;
+    align-items:center;
+    width: 70rem;
+    height:15rem;
+    color: white;
+    font-style: normal; 
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title_blockquote{
+    margin-left: 25rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.subtitle_blockquote{
+    margin-left: 25rem;
+    display: flex;
+    font-size: 17px;
+    padding :5px;
+}
+@media (max-width: 600px) {
+    .title_blockquote, .subtitle_blockquote {
+        margin: 0 auto;
+        margin-left: 20px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Produtos */ 
+.text_shop {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+.text_shop h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--title);
+    line-height: 196.19%;
+    padding-top: 58px;
+}
+.text_shop p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 60;
+    font-size: 19px;
+    color: var(--text);  
+    padding : 15px;
+    margin-bottom : 70px;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width :300px;
+    height :302px;
+    background: var(--bgCard);
+    margin: 0 13px 39px 13px;
+    cursor: pointer;
+}
+.item img{
+    width: 250px;
+    height: 150px; 
+}
+.item img:hover{
+    transform: scale();
+}
+.products img:hover{
+    transform: scale(1.2); 
+    transition: 0.5s all ease;  
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    background: black;
+    width: 100%;
+    padding: 15px;
+}
+.footer p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* Anime */
+[data-anime] {
+    opacity: 0;
+}
+.anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
